@@ -147,6 +147,19 @@
 				</div>
 			</section>
 
+			<section class="row align-items-center">
+				<div class="col-12 my_pad_8">
+					<ul>
+						<li>基于STM32/Arduino和nRF24L01的无线通信</li>
+						<p></p>
+						<p>1.项目背景：这是汽车学院一个六轮车项目的子项目，我们小组主要负责其无线遥控功能的实现</p>
+						<p>2. 发送端：以 Arduino 作为发射端控制器，首先根据硬件手册配置好 nRF24L01 无线模块，使其工作在发送模式(Tx_Mode)。然后控制器接收来自结合摇杆模块的输入，将信号处理后打包成一定的帧格式通过无线模块发射出去</p>
+						<p>3. 接收端：以STM32作为接收端控制器，根据硬件手册配置好nRF24L01无线模块，使其工作在接收模式(Rx_Mode)，并使其地址、频段、速率等参数配置成与发射端相同。当无线模块接收到信号后，控制器将数据包读出，再根据六轮车项目要求，将其打包成CAN的扩展帧，传输到六轮车的控制器</p>
+						<p>4. 本项目的 GitHub 地址：<a href="https://github.com/jJayyyyyyy/basic_STM32_Project/tree/master/nRFWirelessCommunication">https://github.com/jJayyyyyyy/basic_STM32_Project/tree/master/nRFWirelessCommunication</a></p>
+					</ul>
+				</div>
+			</section>
+
 		</article>
 	</div>
 </body>
