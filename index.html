@@ -28,7 +28,7 @@
 			<section class="row align-items-center">
 				<h1 class="col-12">能力描述</h1>
 				<div class="col-12 my_pad_4">
-					<li>技术能力: 了解 Web 前后端开发, 了解 C++, Java, Python, 人工智能, 数字图像处理</li>
+					<li>技术能力: 有前后端开发经验, 了解 Java, Python, C++, 了解人工智能, 实现过传统的数字图像处理算法</li>
 				</div>
 				<div class="col-12 my_pad_4">
 					<li>综合能力: 积极乐观, 团队协作, 自我驱动, 爱好运动</li>
@@ -94,9 +94,30 @@
 						<li>机器学习网站. 网址: <a href="https://ustc-titanic.xyz/">https://www.ustc-titanic.xyz/</a></li>
 						<p></p>
 						<p>1. 本项目最初的任务是根据 Titanic 赛题 <a href="https://www.kaggle.com/c/titanic/">Machine Learning from Disaster</a> 的训练集进行模型训练, 然后将测试集输入训练好的模型并进行预测, 最终将逻辑回归、决策树等模型得到的结果使用多数投票法进行汇总, 提交到 Kaggle 平台后得到的准确率为 83.732 %, 排名前 5% </p>
-						<p>2. 项目中后期, 在完成机器学习模块后, 由于缺少图形界面, 于是我们决定对其扩充, 将其包装成 Web 应用的形式进行展示和交互。</p>
-						<p>3. 网站前端使用了 Vue.js + BootStrape4 的框架组合, 同时还有一个新闻模块, 聚合了来自 <a href="https://tech.163.com/smart/">网易智能</a> , <a href="https://36kr.com/newsflashes">36kr</a> 和 <a href="https://www.huxiu.com/channel/104.html">虎嗅人工智能</a> 等网站中与机器学习、人工智能相关的新闻资讯。网站后端使用的是 Flask 框架, HTTPS 证书由 <a href="https://letsencrypt.org/">Let's Encrypt</a> 颁发, 而机器学习模块由 numpy, pandas, sklearn 等组成</p>
-						<p>4. GitHub: <a href="https://github.com/USTC-Titanic">https://github.com/USTC-Titanic</a></p>
+						<p>2. 项目中后期, 在完成机器学习模块后, 由于缺少图形界面, 于是我们决定对其扩充, 将其包装成 Web 应用的形式进行展示和交互。网站前端使用了 Vue.js + BootStrape4 的框架组合, 同时还有一个新闻模块, 聚合了来自 <a href="https://tech.163.com/smart/">网易智能</a> , <a href="https://36kr.com/newsflashes">36kr</a> 和 <a href="https://www.huxiu.com/channel/104.html">虎嗅人工智能</a> 等网站中与机器学习、人工智能相关的新闻资讯。网站后端使用的是 Flask 框架, HTTPS 证书由 <a href="https://letsencrypt.org/">Let's Encrypt</a> 颁发, 而机器学习模块由 numpy, pandas, sklearn 等组成</p>
+						<p>3. 本项目的 GitHub 地址: <a href="https://github.com/USTC-Titanic">https://github.com/USTC-Titanic</a></p>
+					</ul>
+				</div>
+			</section>
+
+			<section class="row align-items-center">
+				<div class="col-12 my_pad_8">
+					<ul>
+						<li>基于CNN的Captcha注册码识别</li>
+						<p></p>
+						<p>1. 生成训练数据集：输入图片的长和宽, 以及要其中的文本（4位数字）, 然后使用 Python 的第三方库 captcha 来生成图片验证码</p>
+						<p></p>
+
+						<p>2. 验证码图像预处理：将图像转为灰度图, 并进行初步的去噪处理</p>
+						<p></p>
+						
+						<p>3. 定义卷积神经网络：卷积神经网络由三个 [卷积层-池化层] 组成, 其中卷积核大小均为3x3, 池化层大小是2x2, 神经元使用 relu 激活函数</p>
+						<p></p>
+
+						<p>4. 模型训练与预测：每一个 batch 包含 64 张图片, 每 100 个 batch 进行一次性能评估, 在进行了 7900 个 batch 训练后训练集上的准确率达到了 95%, 停止训练并保存模型参数。随后在测试集上进行预测, 准确率约为 90%</p>
+						<p></p>
+
+						<p>5. 本项目的 GitHub 地址: <a href="https://github.com/jJayyyyyyy/USTC-2018-Smester-1/tree/master/AI/exp/04_Captcha">https://github.com/jJayyyyyyy/USTC-2018-Smester-1/tree/master/AI/exp/04_Captcha</a></p>
 					</ul>
 				</div>
 			</section>
@@ -133,28 +154,6 @@
 						<p>1. 这是一个根据 <a href="https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_71_minesweeper">CodingTrain</a> 编程挑战仿写的扫雷游戏, 使用 JavaScript 编写, 绘图引擎使用的是 p5.js</p>
 						<p>2. 本项目的 GitHub 地址: <a href="https://github.com/jJayyyyyyy/MineSweeper">https://github.com/jJayyyyyyy/MineSweeper</a></p>
 						<p>3. Java 版本正在开发中: <a href="https://github.com/jJayyyyyyy/JavaNotes/tree/master/examples/minesweeper/src">https://github.com/jJayyyyyyy/JavaNotes/tree/master/examples/minesweeper/</a></p>
-					</ul>
-				</div>
-			</section>
-
-			<section class="row align-items-center">
-				<div class="col-12 my_pad_8">
-					<ul>
-						<li>基于CNN的Captcha注册码识别</li>
-						<p></p>
-						<p>1. 生成训练数据集：输入图片的长和宽, 以及要其中的文本（4位数字）, 然后使用 Python 的第三方库 captcha 来生成图片验证码</p>
-						<p></p>
-
-						<p>2. 验证码图像预处理：将图像转为灰度图, 并进行初步的去噪处理</p>
-						<p></p>
-						
-						<p>3. 定义卷积神经网络：卷积神经网络由三个 [卷积层-池化层] 组成, 其中卷积核大小均为3x3, 池化层大小是2x2, 神经元使用 relu 激活函数</p>
-						<p></p>
-
-						<p>4. 模型训练与预测：每一个 batch 包含 64 张图片, 每 100 个 batch 进行一次性能评估, 在进行了 7900 个 batch 训练后训练集上的准确率达到了 95%, 停止训练并保存模型参数。随后在测试集上进行预测, 准确率约为 90%</p>
-						<p></p>
-
-						<p>5. 本项目的 GitHub 地址: <a href="https://github.com/jJayyyyyyy/USTC-2018-Smester-1/tree/master/AI/exp/04_Captcha">https://github.com/jJayyyyyyy/USTC-2018-Smester-1/tree/master/AI/exp/04_Captcha</a></p>
 					</ul>
 				</div>
 			</section>
